@@ -1,14 +1,38 @@
 body {
   background-color: rgb(255,150,100,0.2);
+  position: absolute;
+  left:50%;
+}
+.Centered {
+  position: relative;
+  left: -50%;
 }
 
-.title {
+.Title {
   width: 45vw;
   margin: auto;
 }
-.title h1 {
+.Title h1 {
   text-align: center;
   padding: 3vw;
   background-color: rgb(255,150,100,0.43);
   border-radius: 18px;
+}
+#list_tasks input {
+  transform: scale(1.6);
+}
+.Buttons {
+  text-align: center;
+}
+.Salmy img {
+  width: 70px;
+  position: relative;
+  top: -85px;
+  right: -142px;
+}
+.Cloud img {
+  width: 110px;
+  position: relative;
+  top: -55px;
+  right: -120px;
 }

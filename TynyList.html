@@ -9,18 +9,19 @@
     <script type="text/javascript" src="javascript.js"> </script>
   </head>
 
-  <body>
+  <body onload="LoadStoredTasks()">
 <div class="Centered">
 
 
     <div class="Title">
-      <h1> One-task with Salmy </h1>
+      <h1> Salmy's Agenda </h1>
     </div>
 
   <div class="Buttons">
-    <input type="text" id="NewTask">
+    <input type="text" id="NewTask" placeholder="Read a chapter...">
     <div class="Cloud">
         <img src="salmy/cloud.png">
+        <!-- Good Unicorn Font, by Misti's Fonts, at https://www.fontspace.com/good-unicorn-font-f30445-->
     </div>
     <div class="Salmy">
       <img src="salmy/salmy-up.png">
@@ -45,7 +46,8 @@
   // eventListener for pressing Enter while writing on the input box
   document.getElementById("NewTask").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
-      AddNewTask()
+      var GivenObjectTask = document.getElementById("NewTask");
+      AddNewTask(GivenObjectTask)
     }
   });
 </script>

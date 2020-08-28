@@ -2,6 +2,7 @@ body {
   background-color: rgb(255,150,100,0.2);
   position: absolute;
   left:50%;
+  width: auto;
 }
 .Centered {
   position: relative;

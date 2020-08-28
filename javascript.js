@@ -46,7 +46,8 @@ function LoadStoredTasks() {
     Box.id = StoredTask;
     Box.type = "checkbox";
     Box.addEventListener("click", function(event) {
-        localStorage.setItem(StoredTask, true);
+      var Id = this.id;
+      localStorage.setItem(Id, true);
       }
     );
 
@@ -69,7 +70,11 @@ function LoadStoredTasks() {
 
 }
 
-// store the checked attribute of every NewTask
+// Reset button
+function ResetList() {
+  document.getElementById("list_tasks").innerHTML = "";
+  localStorage.clear()
+}
 
 
 // cycle through Salmy pictures as tasks get completed

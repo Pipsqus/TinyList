@@ -19,30 +19,43 @@
 
   <div class="Buttons">
     <input type="text" id="NewTask" placeholder="Read a chapter...">
-    <div class="Cloud">
+    <div class="CloudSet">
         <img src="salmy/cloud.png">
         <!-- Good Unicorn Font, by Misti's Fonts, at https://www.fontspace.com/good-unicorn-font-f30445-->
     </div>
-    <div class="Salmy">
+    <div class="SalmySet">
       <img src="salmy/salmy-up.png">
     </div>
-
+    <div class="CloudReset">
+        <img src="salmy/cloud-right-text1.png"  id="ResetList">
+    </div>
+    <div class="SalmyReset">
+      <img src="salmy/salmy-upright.png">
+    </div>
 
   </div>
 
-    <div id="list_tasks">
+<div class="ToggleActiveState">
+  <input type="button" id="toggle" value="Today">
+</div> <br>
+  <div class="active" id="list_tasks">
 
-    </div>
+  </div>
+
+  <div class="passive" id="list_tomorrow_tasks">
+  </div>
 
 </div>
-
-<input type="button" value="Reset the list" onclick="ResetList()">
 
 <!--  - integrate Salmy
       - hide every task but the first one; eliminate completed tasks
       -
       -
 -->
+
+
+
+
 <script type="text/javascript">
   // eventListener for pressing Enter while writing on the input box
   document.getElementById("NewTask").addEventListener("keydown", function(event) {
@@ -51,6 +64,27 @@
       AddNewTask(GivenObjectTask)
     }
   });
+
+document.getElementById("ResetList").addEventListener("dblclick", function() {
+  ResetList()
+}, false)
+
+var toggleIterator = 0
+document.getElementById("toggle").addEventListener("click", function() {
+  var Today = document.getElementById("list_tasks")
+  var Tomorrow = document.getElementById("list_tomorrow_tasks")
+  Today.classList.toggle("active")
+  Tomorrow.classList.toggle("active")
+  if (toggleIterator%2 == 0) {
+    document.getElementById("toggle").value = "Tomorrow";
+    toggleIterator += 1;
+  }
+  else {
+    document.getElementById("toggle").value = "Today";
+    toggleIterator += 1;
+  }
+})
+
 </script>
 
   </body>

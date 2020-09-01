@@ -22,12 +22,20 @@ body {
   text-align: center;
   height: 250px;
 }
-.TaskSet img {
+.TaskSetHidden img{
+  visibility: hidden;
   width: 110px;
   position: relative;
-  top: -55px;
+  bottom: -35px;
   right: -13vw;
 }
+.TaskSetShow img {
+  width: 110px;
+  position: relative;
+  bottom: -35px;
+  right: -13vw;
+}
+
 .TaskReset img {
   width: 150px;
   position: relative;

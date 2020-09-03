@@ -2,7 +2,7 @@ body {
   background-color: rgb(255,150,100,0.2);
   position: absolute;
   left:50%;
-  width: auto;
+  max-width: 80vw;
 }
 .Centered {
   position: relative;
@@ -22,18 +22,20 @@ body {
   text-align: center;
   height: 250px;
 }
-.TaskSetHidden img{
+
+.TaskSet img {
+  width: 110px;
+  position: relative;
+  bottom: -35px;
+  right: -13vw;
   visibility: hidden;
-  width: 110px;
-  position: relative;
-  bottom: -35px;
-  right: -13vw;
+  animation-name: Disappear;
+  animation-duration: 5s;
 }
-.TaskSetShow img {
-  width: 110px;
-  position: relative;
-  bottom: -35px;
-  right: -13vw;
+@keyframes Disappear {
+  0% {visibility: visible; opacity: 1;}
+  80% {opacity: 0.8}
+  100% {visibility: hidden; opacity: 0}
 }
 
 .TaskReset img {
@@ -41,6 +43,14 @@ body {
   position: relative;
   bottom: 105px;
   right: 6vw;
+  visibility: visible;
+  animation-name: Appear;
+  animation-duration: 8s;
+}
+@keyframes Appear {
+  0% {visibility: hidden; opacity: 0;}
+  80% {visibility: hidden; opacity: 0;}
+  100% {visibility: visible; opacity: 1;}
 }
 
 

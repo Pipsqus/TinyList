@@ -88,10 +88,7 @@ body {
 }
 
 .Footnote {
+  float: left;
   width: 100%;
   height: 200px;
-  position: absolute
-}
-body::after {
-  content: " Powered by Booty Energy"
 }

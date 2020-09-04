@@ -86,3 +86,8 @@ body {
   background-color: rgb(255,160,110,0.7);
   box-sizing: inherit;
 }
+
+.Footnote {
+  width: 100%;
+  height: 200px;
+}

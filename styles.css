@@ -61,7 +61,7 @@ body {
 }
 #list_tomorrow_tasks {
   width: 50%;
-  float: left;
+  float: right;
 }
 #list_tasks input {
   transform: scale(1.45);

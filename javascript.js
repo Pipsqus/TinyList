@@ -29,7 +29,10 @@ function CreateBoxElement(TaskName) {
   Box.id = TaskName;
   Box.type = "checkbox";
   Box.addEventListener("click", function(event) {
-      localStorage.setItem(TaskName, (StoredTask + true))
+      localStorage.setItem(TaskName, (StoredTask + true));
+  //    setTimeout(function() { /
+      localStorage.removeItem(TaskName);
+  //    }, 10000); //
     }
   );
   return Box;

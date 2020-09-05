@@ -45,7 +45,7 @@ body {
   right: 6vw;
   visibility: visible;
   animation-name: Appear;
-  animation-duration: 8s;
+  animation-duration: 6s;
 }
 @keyframes Appear {
   0% {visibility: hidden; opacity: 0;}

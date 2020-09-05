@@ -68,9 +68,9 @@ function LoadStoredTasks() {
     var StoredTask = localStorage.key(i)
     var TestDate = localStorage.getItem(StoredTask).slice(0, 5);
     if (TestDate == "Today") {
-      var ListTasks = document.getElementById("list_tasks")
+      var ListTasks = document.getElementById("list_tasks");
     } else {
-      var ListTasks = document.getElementById("list_tomorrow_tasks")
+      var ListTasks = document.getElementById("list_tomorrow_tasks");
     }
 
     var Box = CreateBoxElement(StoredTask);
@@ -89,17 +89,21 @@ function LoadStoredTasks() {
 
 // Reset button
 function ResetList() {
-  document.getElementById("list_tasks").innerHTML = "";
-  document.getElementById("list_tomorrow_tasks").innerHTML = "";
-  localStorage.clear()
+  document.getElementById("list_tasks").innerHTML = " ";
+  for (j = 0; j < localStorage.length; j++) {
+    var StoredTask = localStorage.key(j)
+    var TestDate = localStorage.getItem(StoredTask).slice(0, 5);
+    if (TestDate == "Today") {
+      localStorage.removeItem(StoredTask);
+      (j == localStorage.length) || j--;
+    }
+  }
 }
-
 
 // cycle through Salmy pictures as tasks get completed
 
 
-/*  DONE- add eventListener to check when you press Enter, and then run the button
-    - use Salmy to communicate that the NewTask is invalid instead of opening a popup
-    - localStorage setting to keep the boxinos
+/*  - use Salmy to communicate that the NewTask is invalid instead of opening a popup
+    DONE - localStorage setting to keep the boxinos
     -
 */

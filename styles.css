@@ -20,6 +20,7 @@ body {
   position: sticky;
   top: 50px;
   z-index: 999;
+  padding: 20px;
 }
 .Buttons {
   height: 250px;

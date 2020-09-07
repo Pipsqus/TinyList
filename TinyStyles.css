@@ -73,6 +73,25 @@ body {
   text-align: left;
   padding: 3%;
 }
+@media screen and (max-width: 1000px) {
+  #list_tasks {
+    width: 45%;
+    text-align: left;
+    float: left;
+    padding: 2%;
+  }
+  #list_tomorrow_tasks {
+    width: 45%;
+    float: right;
+    text-align: left;
+    padding: 3%;
+  }
+}
+
+
+
+
+
 #list_tasks input {
   transform: scale(1.45);
 }

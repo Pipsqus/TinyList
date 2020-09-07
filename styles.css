@@ -1,5 +1,6 @@
 body {
   background-color: rgb(255,150,100,0.2);
+    font-size: 17px;
 }
 .Centered {
   margin: 0 auto;
@@ -20,7 +21,9 @@ body {
   position: sticky;
   top: 50px;
   z-index: 999;
-  padding: 20px;
+  padding: 10px;
+  width: 60%;
+  font-size: 18px;
 }
 .Buttons {
   height: 250px;

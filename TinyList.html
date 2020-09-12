@@ -35,16 +35,19 @@
     <input type="button" id="toggle" value="Today">
   </div> <br>
 
-  <div class="active" id="list_tasks">
+  <div class="Lists">
+      <div class="active" id="list_tasks">
 
+      </div>
+
+      <div class="passive" id="list_tomorrow_tasks">
+
+      </div>
   </div>
 
-  <div class="passive" id="list_tomorrow_tasks">
-
-  </div>
 </div>
 
-
+<p style="text-align:right;"> Powered by <i> Booty Energy </i> </p>
 
 <!--  - integrate Salmy
       - hide every task but the first one; eliminate completed tasks
@@ -55,7 +58,7 @@
 
 
 
-    <script type="text/javascript">
+  <script type="text/javascript">
       // eventListener for pressing Enter while writing on the input box
       document.getElementById("NewTask").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
@@ -83,8 +86,7 @@
         toggleIterator += 1;
       }
     })
-
-    </script>
+  </script>
 
   </body>
 </html>

@@ -1,4 +1,4 @@
 # TinyList
-A tiny to-do list application to show one task at a time.
+A tiny to-do list application supporting automatic task deletion, two columns, and soon a calendar!
 
 https://pipsqus.github.io/TinyList/TinyList.html

@@ -66,7 +66,9 @@ body {
   80% {visibility: hidden; opacity: 0;}
   100% {visibility: visible; opacity: 1;}
 }
-
+.TaskReset img:hover {
+  filter: drop-shadow(10px -8px 4px rgb(255,150,100,0.4)) saturate(1.5) ;
+}
 
 .Lists {
   display: flex;

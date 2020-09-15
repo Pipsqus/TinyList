@@ -79,14 +79,14 @@ body {
   width: 40%;
   text-align: left;
   float: left;
-  padding: 1em 2em;
+  padding: 2em 4em;
   flex-grow: 1;
 }
 #list_tomorrow_tasks {
   width: 40%;
   float: right;
   text-align: left;
-  padding: 1em 2em;
+  padding: 2em 4em;
   flex-grow: 1;
 }
 @media screen and (max-width: 1000px) {
@@ -135,9 +135,9 @@ body {
   content: "";
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  background-image: url(salmy/salmy-lowleft.png);
-  background-size: 250px;
-  background-repeat: no-repeat;
+  background-image: url(salmy/salmy-right.png);
+  background-size: 120px;
+  background-repeat: repeat-y;
   background-position: center;
   z-index: -10;
 }

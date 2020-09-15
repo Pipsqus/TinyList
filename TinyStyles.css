@@ -125,6 +125,7 @@ body {
   background-color: rgb(255,150,100,0.3);
   box-shadow: 0 0 20px 10px rgb(255,150,100,0.3);
   border-radius: 30%;
+  overflow: hidden;
 }
 .active::before {
   content: "";

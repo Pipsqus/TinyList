@@ -49,13 +49,6 @@
 
 <p style="text-align:right;"> Powered by <i> Booty Energy </i> </p>
 
-<!--  - integrate Salmy
-      - hide every task but the first one; eliminate completed tasks
-      -
-      -
--->
-
-
 
 
   <script type="text/javascript">
@@ -67,16 +60,20 @@
         }
       });
 
+      // eventListener for the reset
     document.getElementById("ResetList").addEventListener("dblclick", function() {
       ResetList()
     })
 
+    // eventListener for Today/Tomorrow button
     var toggleIterator = 0
     document.getElementById("toggle").addEventListener("click", function() {
       var Today = document.getElementById("list_tasks")
       var Tomorrow = document.getElementById("list_tomorrow_tasks")
       Today.classList.toggle("active")
       Tomorrow.classList.toggle("active")
+      Today.classList.toggle("passive")
+      Tomorrow.classList.toggle("passive")
       if (toggleIterator%2 == 0) {
         document.getElementById("toggle").value = "Tomorrow";
         toggleIterator += 1;

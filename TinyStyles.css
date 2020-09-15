@@ -125,11 +125,25 @@ body {
   transform: scale(1.45);
 }
 .active {
-  background-color: rgb(255,150,100,0.2);
-  box-shadow: -3px -3px 4px 7px rgb(255, 173, 200, 0.43), 3px 3px 4px 5px rgb(109, 116, 140, 0.43);
-  border-radius: 15px;
+  position: relative;
+  background-color: rgb(255,150,100,0.3);
+  box-shadow: 0 0 20px 10px rgb(255,150,100,0.3);
+  border-radius: 30%;
+  overflow: hidden;
 }
-.passive {}
+.passive::before {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image: url(salmy/salmy-lowleft.png);
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -10;
+}
+.passive {
+  position: relative;
+}
 
 .ToggleActiveState {
   text-align: center;

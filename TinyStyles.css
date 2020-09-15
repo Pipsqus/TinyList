@@ -15,10 +15,11 @@ body {
 .Title {
   width: 45vw;
   margin: auto;
+  filter: drop-shadow(7px -3px 5px rgb(255,150,100,0.6));
 }
 .Title h1 {
   padding: 3vw 6vw;
-  background-image: repeating-linear-gradient(30deg, rgb(255,150,100,0.6), rgb(255,150,100,0.6) 30px, transparent 0, transparent 45px);
+  background-image: repeating-linear-gradient(30deg, rgb(255,150,100,0.6), rgb(255,150,100,0.6) 30px, rgba(255, 255, 255, 0.6) 32px, rgba(255, 255, 255, 0.6) 45px);
   border-radius: 1em;
 }
 
@@ -42,6 +43,7 @@ body {
   visibility: hidden;
   animation-name: Disappear;
   animation-duration: 5s;
+  filter: drop-shadow(7px -3px 5px rgb(255,150,100,0.6));
 }
 @keyframes Disappear {
   0% {visibility: visible; opacity: 1;}
@@ -57,6 +59,7 @@ body {
   visibility: visible;
   animation-name: Appear;
   animation-duration: 6s;
+  filter: drop-shadow(7px -3px 5px rgb(255,150,100,0.6));
 }
 @keyframes Appear {
   0% {visibility: hidden; opacity: 0;}

@@ -114,10 +114,6 @@ body {
   }
 }
 
-
-
-
-
 #list_tasks input {
   transform: scale(1.45);
 }
@@ -129,16 +125,15 @@ body {
   background-color: rgb(255,150,100,0.3);
   box-shadow: 0 0 20px 10px rgb(255,150,100,0.3);
   border-radius: 30%;
-  overflow: hidden;
 }
-.passive::before {
+.active::before {
   content: "";
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   background-image: url(salmy/salmy-right.png);
   background-size: 120px;
   background-repeat: repeat-y;
-  background-position: center;
+  background-position: left -20% bottom 35%;
   z-index: -10;
 }
 .passive {

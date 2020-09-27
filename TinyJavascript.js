@@ -105,6 +105,16 @@ function ResetList() {
 
 // cycle through Salmy pictures as tasks get completed
 
+// Show info
+function ShowInfo() {
+  Info = document.getElementById("Info");
+  if (!(Info.style.display == "block")) {
+      Info.style.display = "block";
+      Info.scrollIntoView();
+  } else {
+    Info.style.display = "none";
+  }
+}
 
 /*  - use Salmy to communicate that the NewTask is invalid instead of opening a popup
     DONE - localStorage setting to keep the boxinos

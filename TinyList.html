@@ -47,7 +47,15 @@
 
 </div>
 
-<p style="text-align:right;"> Powered by <i> Booty Energy </i> </p>
+<div class="FlexInfo">
+  <div class="DivInfo"> <p style="text-align:right;"> Powered by <i> Booty Energy. </i> </p> </div>
+  <div class="DivImage"> <button type="button" onclick="ShowInfo()"> <img src="salmy/info.png" alt="How to use this website?"> </button> </div>
+</div>
+<div style="position: relative;">
+  <div id="Info"> Add tasks by pressing Enter after writing something. <br> Double click on Salmy to reset Today's list. At the moment you can only reset the Tomorrow list by ticking every box. <br> Enjoy! </div>
+</div>
+
+
 
 
 
@@ -82,7 +90,9 @@
         document.getElementById("toggle").value = "Today";
         toggleIterator += 1;
       }
-    })
+    });
+
+
   </script>
 
   </body>

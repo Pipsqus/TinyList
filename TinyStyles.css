@@ -1,6 +1,7 @@
 body {
   background-color: rgb(255,150,100,0.2);
   font-size: 1.3em;
+  scroll-behavior: smooth;
 }
 .Centered {
   margin: 0 auto;
@@ -154,4 +155,36 @@ body {
   .active::before {
     background-image: none;
   }
+}
+
+.FlexInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.DivInfo {
+  flex: 40 1 10em;
+}
+.DivImage {
+  flex: 1 1 1em;
+  position: relative
+}
+.DivImage img {
+  width: 50px;
+}
+.DivImage button {
+  border: none;
+  background-color: rgb(255,150,100,0.05);
+}
+#Info {
+  display: none;
+  background-color: rgb(255,150,100,0.3);
+  box-shadow: 0 0 20px 10px rgb(255,150,100,0.3);
+  border-radius: 10%;
+  padding: 1em;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  position: absolute;
+  right: 1em;
+  top: 1em;
 }

@@ -134,13 +134,13 @@ body {
     width: 40%;
     text-align: left;
     float: left;
-    padding: 5%;
+    padding: 2.5% 5%;
   }
   #list_tomorrow_tasks {
     width: 40%;
     float: right;
     text-align: left;
-    padding: 5%;
+    padding: 2.5% 5%;
   }
   .Centered {
     margin: 0 auto;
@@ -187,4 +187,9 @@ body {
   position: absolute;
   right: 1em;
   top: 1em;
+}
+kbd {
+  border: 1px solid black;
+  background: white;
+  padding: 2px 4px
 }

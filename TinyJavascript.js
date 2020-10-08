@@ -59,6 +59,8 @@ function StoreTask(NewTask, ActiveDiv) {
   var Checkness = "false";
 
   if (toggleIterator%2 == 0) {
+     // this corresponds to what state the toggle Today/Tomorrow is in:
+     // even numbers <=> Today, odd numbers <=> Tomorrow
       localStorage.setItem(NewTask, ("Today" + Checkness));
   } else {
       localStorage.setItem(NewTask, ("Tmrrw" + Checkness))

@@ -30,9 +30,9 @@ function CreateBoxElement(TaskName) {
   Box.type = "checkbox";
   Box.addEventListener("click", function(event) {
       localStorage.setItem(TaskName, (StoredTask + true));
-      setTimeout(function() {
+      /* setTimeout(function() {
                   localStorage.removeItem(TaskName);
-      }, 1);
+      }, 1); */
     }
   );
   return Box;
@@ -95,14 +95,15 @@ function LoadStoredTasks() {
 // Reset button
 function ResetList() {
   document.getElementById("list_tasks").innerHTML = " ";
-  for (j = 0; j < localStorage.length; j++) {
+  localStorage.clear();
+/*  for (j = 0; j < localStorage.length; j++) {
     var StoredTask = localStorage.key(j)
     var TestDate = localStorage.getItem(StoredTask).slice(0, 5);
     if (TestDate == "Today") {
       localStorage.removeItem(StoredTask);
       (j == localStorage.length) || j--;
     }
-  }
+  } */
 }
 
 // cycle through Salmy pictures as tasks get completed

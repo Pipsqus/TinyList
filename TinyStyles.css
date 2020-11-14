@@ -35,16 +35,31 @@ body {
 .Buttons {
   height: 16em;
 }
+.TaskSet, .TaskReset {
+  width: 50%;
+  float: left;
+}
+.TaskSet button {
+  padding: 1em;
+  margin: 1em;
+  width: 80%;
+}
+.TaskReset button {
+  padding: 1em;
+  margin: 1em;
+  width: 80%;
+}
+
 
 .TaskSet img {
-  width: 10em;
+/*  width: 50%;
   position: relative;
   bottom: -2.6em;
   right: -13vw;
   visibility: hidden;
   animation-name: Disappear;
   animation-duration: 5s;
-  filter: drop-shadow(7px -3px 5px rgb(255,150,100,0.6));
+  filter: drop-shadow(7px -3px 5px rgb(255,150,100,0.6)); */
 }
 @keyframes Disappear {
   0% {visibility: visible; opacity: 1;}
@@ -53,14 +68,14 @@ body {
 }
 
 .TaskReset img {
-  width: 13em;
+/*  width: 13em;
   position: relative;
   bottom: 11em;
   right: 6vw;
   visibility: visible;
   animation-name: Appear;
   animation-duration: 6s;
-  filter: drop-shadow(7px -3px 5px rgb(255,150,100,0.6));
+  filter: drop-shadow(7px -3px 5px rgb(255,150,100,0.6)); */
 }
 @keyframes Appear {
   0% {visibility: hidden; opacity: 0;}

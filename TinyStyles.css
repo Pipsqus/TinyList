@@ -31,6 +31,7 @@ body {
   margin: 0 auto;
   display: flex;
   width: 13em;
+  min-height: 12em;
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -138,7 +139,9 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-
+  .Title h1 {
+    max-width: 50vw;
+  }
   #list_tasks {
     width: 40%;
     text-align: left;

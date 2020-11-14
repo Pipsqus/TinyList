@@ -13,7 +13,7 @@ body {
   position:relative;
   padding: 1em 1.5em;
   margin: 0 auto;
-  width: 8em;
+  width: 6em;
   background: radial-gradient(circle at bottom right, transparent 50px, transparent 0) bottom right/50% no-repeat,
   radial-gradient(circle at bottom left, transparent 50px, transparent 0) bottom left/50% no-repeat;
   overflow: hidden;
@@ -63,11 +63,8 @@ body {
 @media screen and (min-width: 1130px) {
   .Title {
     position: absolute;
-    top: 1.5em;
+    top: 2.5em;
     right: 55%;
-  }
-  .Title h1 {
-    padding: 2.1em 1.7em;
   }
   #NewTaskField {
     position: static;
@@ -141,6 +138,7 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+
   #list_tasks {
     width: 40%;
     text-align: left;

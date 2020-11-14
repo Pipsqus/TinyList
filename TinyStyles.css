@@ -33,7 +33,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
 }
-#NewTask {
+#NewTaskField {
   position: sticky;
   top: 3em;
   z-index: 999;

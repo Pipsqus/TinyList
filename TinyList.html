@@ -16,8 +16,8 @@
 
 
     <div class="Buttons">
-        <input type="text" class="TaskInput "id="NewTask" placeholder="Groceries...">
-        <button type="button" class="TaskSet"> Add task </button>
+        <input type="text" class="TaskInput" id="NewTaskField" placeholder="Groceries...">
+        <button type="button" class="TaskSet" id="AddTaskButton"> Add task </button>
         <button type="button" class="TaskReset "id="ResetList"> Reset the lists </button>
     </div>
 
@@ -53,11 +53,16 @@
 
   <script type="text/javascript">
       // eventListener for pressing Enter while writing on the input box
-      document.getElementById("NewTask").addEventListener("keydown", function(event) {
+      document.getElementById("NewTaskField").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
-          var GivenObjectTask = document.getElementById("NewTask");
+          var GivenObjectTask = document.getElementById("NewTaskField");
           AddNewTask(GivenObjectTask)
         }
+      });
+      // eventListener for Add Task button
+      document.getElementById("AddTaskButton").addEventListener("click", function(event) {
+          var GivenObjectTask = document.getElementById("NewTaskField");
+          AddNewTask(GivenObjectTask)
       });
 
       // eventListener for the reset

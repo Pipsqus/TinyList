@@ -60,7 +60,31 @@ body {
   text-align: right;
   font-size: 1.1em;
 }
-
+@media screen and (min-width: 1130px) {
+  .Title {
+    position: absolute;
+    margin: 2% 8%;
+  }
+  .Title h1 {
+    padding: 2em 1.7em;
+  }
+  #NewTaskField {
+    position: static;
+  }
+  .Buttons {
+    width: 30vw;
+    position: relative;
+    left: 12em;
+  }
+  .TaskSet {
+    background: url(salmy/salmy-lowleft.png) 50%/90px no-repeat;
+    background-color: rgb(255,250,250,0.8);
+  }
+  .TaskReset {
+    background: url(salmy/salmy-upright.png) 30%/70px no-repeat ;
+    background-color: rgb(255,250,250,0.8);
+  }
+}
 
 
 .CenteredLists {

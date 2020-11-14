@@ -8,29 +8,19 @@
     <link rel="stylesheet" href="TinyStyles.css">
     <script type="text/javascript" src="TinyJavascript.js"> </script>
   </head>
+<body onload="LoadStoredTasks()">
 
-  <body onload="LoadStoredTasks()">
+    <header class="Title">
+      <h1> My Salmy Agenda </h1>
+    </header>
 
-<div class="Centered">
 
-      <header class="Title">
-        <h1> My Salmy Agenda </h1>
-      </header>
-
-  <input type="text" id="NewTask" placeholder="Groceries...">
     <div class="Buttons">
-      <div class="TaskSet">
-        <button type="button"> Add task </button>
-        <!--   <img src="salmy/salmy-add-task.png"> -->
-          <!-- Good Unicorn Font, by Misti's Fonts, at https://www.fontspace.com/good-unicorn-font-f30445-->
-      </div>
-      <div class="TaskReset">
-        <button type="button" id="ResetList">Reset the lists</button>
-        <!--  <img src="salmy/salmy-reset.png"  id="ResetList"> -->
-      </div>
-
+        <input type="text" class="TaskInput "id="NewTask" placeholder="Groceries...">
+        <button type="button" class="TaskSet"> Add task </button>
+        <button type="button" class="TaskReset "id="ResetList"> Reset the lists </button>
     </div>
-</div>
+
 
 <div class="CenteredLists">
   <div class="ToggleActiveState">

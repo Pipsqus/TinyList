@@ -2,12 +2,9 @@ body {
   background-color: rgb(255,150,100,0.2);
   font-size: 1.3em;
   scroll-behavior: smooth;
-}
-.Centered {
-  margin: 0 auto;
   text-align: center;
-  width: 60%;
 }
+
 .CenteredLists {
   margin: 0 auto;
   text-align: center;
@@ -24,83 +21,52 @@ body {
   border-radius: 1em;
 }
 
+
+.Buttons {
+  margin: 0 auto;
+  display: flex;
+  width: 40%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 #NewTask {
   position: sticky;
   top: 3em;
   z-index: 999;
   padding: 1.2em 1em;
-  width: 60%;
   font-size: 18px;
 }
-.Buttons {
-  height: 16em;
+.TaskSet, .TaskReset, .TaskInput {
+  flex: 1 1 2em;
+  padding: 1.2em 1em;
 }
-.TaskSet, .TaskReset {
-  width: 50%;
-  float: left;
+.TaskSet {
+  background-image: url(salmy/salmy-upright.png);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.TaskSet button {
-  padding: 1em;
-  margin: 1em;
-  width: 80%;
-}
-.TaskReset button {
-  padding: 1em;
-  margin: 1em;
-  width: 80%;
+.TaskSet:active, .TaskReset:active {
+  color: black;
 }
 
-
-.TaskSet img {
-/*  width: 50%;
-  position: relative;
-  bottom: -2.6em;
-  right: -13vw;
-  visibility: hidden;
-  animation-name: Disappear;
-  animation-duration: 5s;
-  filter: drop-shadow(7px -3px 5px rgb(255,150,100,0.6)); */
-}
-@keyframes Disappear {
-  0% {visibility: visible; opacity: 1;}
-  80% {opacity: 0.8}
-  100% {visibility: hidden; opacity: 0}
+.TaskReset {
+  margin-bottom: 2em;
 }
 
-.TaskReset img {
-/*  width: 13em;
-  position: relative;
-  bottom: 11em;
-  right: 6vw;
-  visibility: visible;
-  animation-name: Appear;
-  animation-duration: 6s;
-  filter: drop-shadow(7px -3px 5px rgb(255,150,100,0.6)); */
-}
-@keyframes Appear {
-  0% {visibility: hidden; opacity: 0;}
-  80% {visibility: hidden; opacity: 0;}
-  100% {visibility: visible; opacity: 1;}
-}
-.TaskReset img:hover {
-  filter: drop-shadow(10px -8px 4px rgb(255,150,100,0.4)) saturate(1.5) ;
-}
 
 .Lists {
   display: flex;
   justify-content: center;
-
 }
 #list_tasks {
   width: 40%;
   text-align: left;
-  float: left;
   padding: 2em 4em;
   flex-grow: 1;
 }
 #list_tomorrow_tasks {
   width: 40%;
-  float: right;
   text-align: left;
   padding: 2em 4em;
   flex-grow: 1;

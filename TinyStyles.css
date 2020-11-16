@@ -36,7 +36,6 @@ body {
   flex-direction: column;
 }
 #NewTaskField {
-  position: sticky;
   top: 3em;
   z-index: 999;
   padding: 0.7em 0.5em;

@@ -140,6 +140,7 @@ body {
 @media screen and (max-width: 1000px) {
   .Title h1 {
     width: 50vw;
+    padding: 1em 1em;
   }
   #list_tasks {
     width: 40%;

@@ -138,6 +138,9 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .Title h1 {
+    width: 50vw;
+  }
   #list_tasks {
     width: 40%;
     text-align: left;
